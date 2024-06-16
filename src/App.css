@@ -1,12 +1,12 @@
 /* IMPORT */
 @font-face {
   font-family: "Poetsen One";
-  src: url('./assets/fonts/PoetsenOne-Regular.ttf');
+  src: url('/fonts/PoetsenOne-Regular.ttf');
 }
 
 @font-face {
   font-family: "Salsa";
-  src: url('./assets/fonts/Salsa-Regular.ttf');
+  src: url('/fonts/Salsa-Regular.ttf');
 }
 
 
@@ -63,7 +63,7 @@ p,button {
   background-color: rgb(125, 164, 199);
   background-size: cover;
   background-position: center;
-  background-image: url("./assets/images/background.png");
+  background-image: url("/images/background.png");
 }
 
 .cookie-area {
@@ -97,7 +97,7 @@ p,button {
     top: 10%;
     width: 300px;
     height: 300px;
-    background-image: url("./assets/images/cookie.png");
+    background-image: url("/images/cookie.png");
     background-size: 300px 300px;
     transition: transform 0.1s ease;
 }

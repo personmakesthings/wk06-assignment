@@ -1,0 +1,197 @@
+/* IMPORT */
+@font-face {
+  font-family: "Poetsen One";
+  src: url('./assets/fonts/PoetsenOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Salsa";
+  src: url('./assets/fonts/Salsa-Regular.ttf');
+}
+
+
+
+/* GENERAL STYLES */
+* {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  margin: 0;
+}
+
+#app-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  height: 100vh;
+}
+
+button {
+  all: unset;
+}
+
+h1,h2,h3 {
+  font-family: "Poetsen One", 'Times New Roman', Times, serif;
+  font-weight: 400;
+  color: white;
+}
+
+p,button {
+  font-family: "Salsa", 'Times New Roman', Times, serif;
+  font-weight: 100;
+  color: white;
+  line-height: 16px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+
+
+/* COOKIE SECTION */
+.cookie-section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(125, 164, 199);
+  background-size: cover;
+  background-position: center;
+  background-image: url("./assets/images/background.png");
+}
+
+.cookie-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cookie-area > p {
+    color: black;
+    text-shadow:
+    1px 1px 4px rgb(255, 255, 255),
+    -1px 1px 4px rgb(255, 255, 255),
+    -1px -1px 4px rgb(255, 255, 255),
+    1px -1px 4px rgb(255, 255, 255);
+}
+
+#cookie-count {
+    font-size: 40px;
+}
+
+#cookie-box {
+    position: relative;
+}
+
+#cookie-button {
+    z-index: 2;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    width: 300px;
+    height: 300px;
+    background-image: url("./assets/images/cookie.png");
+    background-size: 300px 300px;
+    transition: transform 0.1s ease;
+}
+
+#cookie-button:hover {
+    transform: scale(1.1);
+}
+
+#cookie-button:active {
+    transform: scale(1.2);
+}
+
+#sunburst {
+    z-index: 1;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-size: 400px 400px;
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#banner {
+    width: 400px;
+}
+
+#delete-save {
+  margin: 10px 0px 0px 0px;
+  padding: 8px 8px 8px 8px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.295);
+  transition: transform 0.1s ease;
+}
+
+#delete-save:hover {
+  background-color: #1d1818;
+}
+
+/* BORDER IMAGE */
+.border {
+    height: 100vh;
+}
+
+
+
+/* UPGRADE SHOP SECTION */
+.upgrades-section {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.212) 0%, rgba(255, 255, 255, 0) 100%), #651123;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: right;
+  padding: 20px 5px 0px 20px;
+}
+
+.upgrade-div {
+  padding: 1px 30px 1px 30px;
+  margin: 10px;
+  background-color: rgba(126, 99, 99, 0.295);
+  border-radius: 5px;;
+  transition: ease 0.15s;
+}
+
+.upgrade-div:hover {
+  background-color: #1d1818;
+}
+
+
+.u1, .u3, .u5, .u7, .u9 {
+  background-color: rgba(0, 0, 0, 0.295);
+}
+
+#u1:hover,
+#u3:hover,
+#u5:hover,
+#u7:hover,
+#u9:hover{
+  background-color: #1d1818;
+}
+
+.upgrades-banner {
+  position: relative;
+  width: 300px;
+  right: -5px;
+}
+
+.upgrade-div > p,
+.upgrade-div > h2 {
+  line-height: 5px;
+}

@@ -91,19 +91,19 @@ export default function App() {
           <p id="cookie-count">{cookies} cookies!</p>
           <div id="cookie-box">
             <button onClick={increaseCookies} id="cookie-button" className="pointer" />
-            <img id="sunburst" src="assets/images/sunburst.png"></img>
+            <img id="sunburst" src="src/assets/images/sunburst.png"></img>
           </div>
           <p id="cps-count">Your upgrades are baking {cps} cookies per second!</p>
-          <img src="assets/images/banner.png" id="banner" />
+          <img src="src/assets/images/banner.png" id="banner" />
           {/* DELETE SAVE DATA BUTTON */}
           <button id="delete-save" className="pointer" onClick={() => deleteSave()}>Click here to delete your save data</button>
         </div>
-        <img className="border" src="assets/images/section-border-2.png" />
+        <img className="border" src="src/assets/images/section-border-2.png" />
       </section>
 
       {/* UPGRADE SHOP */}
       <section className="upgrades-section">
-      <img className="upgrades-banner" src="assets/images/header-4.png" alt="Upgrade Shop" />
+      <img className="upgrades-banner" src="src/assets/images/header-4.png" alt="Upgrade Shop" />
       {/* FOR TEST PURPOSES ONLY */}
       {/* <button onClick={() => buyUpgrade(0, 100)}>Buy Upgrade (Prototype Button)</button> */}
       {/* UPGRADES */}

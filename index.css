@@ -1,7 +1,7 @@
 /* IMPORT */
 @font-face {
     font-family: "Salsa";
-    src: url('./src/assets/fonts/Salsa-Regular.ttf');
+    src: url('/src/assets/fonts/Salsa-Regular.ttf');
 }
 
 iframe {
